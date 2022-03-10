@@ -161,4 +161,8 @@ gradle-app.setting
 ### Gradle Patch ###
 **/build/
 
+### Test
+실습코드/.idea
+실습코드/Java.iml
+
 # End of https://www.gitignore.io/api/java,macos,gradle,intellij
