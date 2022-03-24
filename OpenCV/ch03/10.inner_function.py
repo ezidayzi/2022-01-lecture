@@ -9,4 +9,4 @@ print('c의 자료형: ', type(c), type(c[0]), type(c[1]))
 print('2의 4제곱: ', pow(2, 4))
 print('절댓값: ', abs(-4))
 
-eval('print("test")')
+eval('print("test")') # 매개변수로 받은 expression (=식)을 문자열로 받아서, 실행하는 함

@@ -1,6 +1,6 @@
 import numpy as np
 
-np.random.seed(10) # 랜덤 값의 시드 설정
+np.random.seed(10) # 랜덤 값의 시드 설정 -> 같은 시점에 동시에 호출되면 같은 값이 나오는데, 이것을 방지하기 위해 설정해주어야한다.
 a = np.random.rand(2, 3) # 균일 분포 난수, 2X3 행렬
 b = np.random.randn(3, 2) # 평균 0, 표준편차 1의 정규분포 난수
 c = np.random.rand(6) # 균일 분포 난수 - 1차원 행렬
