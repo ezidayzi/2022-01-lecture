@@ -4,6 +4,9 @@ image = cv2.imread("images/ssu.jpg", cv2.IMREAD_COLOR)
 logo1 = cv2.imread("images/ssu_logo1.jpg", cv2.IMREAD_COLOR)
 logo2 = cv2.imread("images/ssu_logo2.jpg", cv2.IMREAD_COLOR)
 
+if image is None or logo1 is None or logo2 is None:
+    raise Exception("영상파일 읽기 에러")
+
 logo = np.copy(logo1)
 
 (H, W), (h, w) = logo1.shape[:2], logo2.shape[:2]

@@ -14,13 +14,13 @@ def onMouse(event, x, y, flags, param):
     global image, bar_name
 
     if event == cv2.EVENT_RBUTTONDOWN:
-        if (image[0][0] < 246):
+        if image[0][0] < 246:
             image = image + 10
         cv2.setTrackbarPos(bar_name, title, image[0][0])  # 트랙바 위치 변경
         cv2.imshow(title, image)
         print("오른쪽 마우스 클릭: {}".format([0][0]))
     elif event == cv2.EVENT_LBUTTONDOWN:
-        if (image[0][0] >= 10):
+        if image[0][0] >= 10:
             image = image - 10
         cv2.setTrackbarPos(bar_name, title, image[0][0])  # 트랙바 위치 변경
         cv2.imshow(title, image)

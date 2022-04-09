@@ -1,8 +1,7 @@
 import numpy as np
 import cv2
-from numpy.array_api import astype
 
-image8 = cv2.imread("images/read_color.jpg", cv2.IMREAD_COLOR)
+image8 = cv2.imread("02/images/read_color.jpg", cv2.IMREAD_COLOR)
 if image8 is None:
     raise Exception("영상 파일 읽기 에러")
 
@@ -13,8 +12,9 @@ print("image8 행렬의 일부\n %s\n" % image8[10: 12, 10:13])
 print("image16 행렬의 일부\n %s\n" % image16[10: 12, 10:13])
 print("image32 행렬의 일부\n %s\n" % image8[10: 12, 10:13])
 
-cv2.imwrite('images/write_text_16.tif', image16)
-cv2.imwrite('images/write_test_32.tif', image32)
+cv2.imwrite('02/images/write_text_16.tif', image16)
+cv2.imwrite('02/images/write_test_32.tif', image32)
 
 cv2.imshow('image16', image16)
 cv2.imshow('image32', (image32*255).astype('uint8'))
+cv2.waitKey(0)

@@ -14,7 +14,7 @@ switch_case = {
     2621440: "아래쪽 화살표키 입력"
 }
 
-image = np.ones((200, 300), np.float) # 화소값이 1인 행렬 생성
+image = np.ones((200, 300), np.float64) # 화소값이 1인 행렬 생성
 cv2.namedWindow('Keyboard Event') #윈도우 이름
 cv2.imshow('Keyboard Event', image)
 

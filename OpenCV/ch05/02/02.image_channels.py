@@ -7,7 +7,7 @@ if image.ndim != 3: raise Exception("컬러 영상 아님")
 bgr = cv2.split(image)
 
 print("bgr 자료형: ", type(bgr), type(bgr[0]), type(bgr[0][0][0]))
-print("bgr 원소개수: ", len(bgr))
+print("bgr 원소 개수: ", len(bgr))
 
 cv2.imshow("image", image)
 cv2.imshow("Blue channel", bgr[0])

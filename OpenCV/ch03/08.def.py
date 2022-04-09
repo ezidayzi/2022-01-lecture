@@ -4,6 +4,7 @@ def calc_area(type, a, b, c=None):
         msg = '사각형'
     elif type == 2:
         result = a * b / 2
+        msg = '삼각형'
     elif type == 3:
         result = (a+b) * c / 2
         msg = '평행사변형'
