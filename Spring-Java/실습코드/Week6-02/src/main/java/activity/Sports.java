@@ -1,16 +1,17 @@
-import org.springframework.beans.factory.annotation.Autowired;
+package activity;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Sports {
-    @Autowired
+
     private Team team1;
 
-    @Autowired
     private Team team2;
 
-    @Autowired
     private Team team3;
 
-    @Autowired
     private Game game;
 
     private String name;
@@ -23,6 +24,7 @@ public class Sports {
         return team1;
     }
 
+    @Autowired
     public void setTeam1(Team team1) {
         this.team1 = team1;
     }
@@ -31,6 +33,7 @@ public class Sports {
         return team2;
     }
 
+    @Autowired
     public void setTeam2(Team team2) {
         this.team2 = team2;
     }
@@ -39,6 +42,7 @@ public class Sports {
         return team3;
     }
 
+    @Autowired
     public void setTeam3(Team team3) {
         this.team3 = team3;
     }
@@ -47,6 +51,7 @@ public class Sports {
         return game;
     }
 
+    @Autowired
     public void setGame(Game game) {
         this.game = game;
     }

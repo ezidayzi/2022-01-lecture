@@ -1,19 +1,13 @@
+import activity.*;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ComponentScan;
 
-import java.sql.ResultSet;
-import java.util.function.Supplier;
 
 @Configuration
+@ComponentScan(basePackages = {"activity"})
 public class AppContext {
-
-    @Bean
-    public Game game() {
-        Game game = new Game();
-        game.setName("game");
-        return  game;
-    }
 
     @Bean
     @Qualifier("referee1")
@@ -29,13 +23,6 @@ public class AppContext {
         Referee referee2 = new Referee();
         referee2.setName("referee2");
         return  referee2;
-    }
-
-    @Bean
-    public Sports sports() {
-        Sports sports = new Sports();
-        sports.setName("sports");
-        return  sports;
     }
 
     @Bean

@@ -1,6 +1,9 @@
+package activity;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class Owner {
+public class Coach {
+
     private String name;
 
     public void setName(String name) {
@@ -11,7 +14,7 @@ public class Owner {
         return name;
     }
 
-    public Owner() {
-        System.out.println("구단주 객체가 생성되었습니다.");
+    public Coach() {
+        System.out.println("코치 객체가 생성되었습니다.");
     }
 }

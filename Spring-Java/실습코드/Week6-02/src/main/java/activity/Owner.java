@@ -1,6 +1,8 @@
+package activity;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
-public class Referee {
+public class Owner {
     private String name;
 
     public void setName(String name) {
@@ -11,7 +13,7 @@ public class Referee {
         return name;
     }
 
-    public Referee() {
-        System.out.println("심판 객체가 생성되었습니다.");
+    public Owner() {
+        System.out.println("구단주 객체가 생성되었습니다.");
     }
 }

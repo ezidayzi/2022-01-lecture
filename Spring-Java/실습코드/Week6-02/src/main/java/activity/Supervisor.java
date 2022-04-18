@@ -1,4 +1,4 @@
-import org.springframework.beans.factory.annotation.Autowired;
+package activity;
 
 public class Supervisor {
     private String name;
