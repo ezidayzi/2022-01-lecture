@@ -11,8 +11,9 @@ def print_rects(rects):
 
 rands = np.zeros((5, 5), np.uint16)
 starts = cv2.randn(rands[:, :2], 100, 50)
+print(rands)
 ends = cv2.randn(rands[:, 2: -1], 300, 50)
-
+print(rands)
 sizes = cv2.absdiff(starts, ends)
 areas = sizes[:, 0] * sizes[:, 1]
 rects = rands.copy()

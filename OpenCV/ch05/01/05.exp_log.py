@@ -20,6 +20,7 @@ print("[v2_exp] 자료형: %s 형태: %s" %(type(v2_exp), v2_exp.shape))
 print("[v3_exp] 자료형: %s 형태: %s" %(type(v3_exp), v3_exp.shape))
 print()
 
+print(v1_exp)
 print("[log] = ", log.T)
 print("[sqrt] = ", np.ravel(sqrt))
-print("[pow] = ", pow.flatten())
+print("[pow] = ", np.ravel(pow))

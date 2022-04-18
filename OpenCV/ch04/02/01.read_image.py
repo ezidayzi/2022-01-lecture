@@ -7,6 +7,8 @@ title1, title2 = 'gray2gray', 'gray2color' # 윈도우 이름
 gray2gray = cv2.imread("images/read_gray.jpg", cv2.IMREAD_GRAYSCALE) # 명암도
 gray2color = cv2.imread("images/read_gray.jpg", cv2.IMREAD_COLOR) # 컬러 영상
 
+print(gray2color.dtype)
+
 ## 예외 처리 - 영상 파일 읽기 여부 조사
 if gray2gray is None or gray2color is None:
     raise Exception("영상파일 읽기 에러")

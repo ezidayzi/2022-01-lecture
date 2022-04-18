@@ -1,13 +1,13 @@
 import cv2
 import numpy as np
 
-image1 = np.zeros((300, 300), np.uint8)
+image1 = np.full((300, 300),200, np.uint8)
 image2 = image1.copy()
 
 h, w = image1.shape[:2]
 cx, cy = w // 2, h // 2
-cv2.circle(image1, (cx, cy), 100, 255, -1)
-cv2.rectangle(image2, (0, 0, cx, h), 255, -1)
+cv2.circle(image1, (cx, cy), 100, 150, -1)
+cv2.rectangle(image2, (0, 0, cx, h), 100, -1)
 
 image3 = cv2.bitwise_or(image1, image2)
 image4 = cv2.bitwise_and(image1, image2)
