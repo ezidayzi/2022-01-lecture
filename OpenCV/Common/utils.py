@@ -1,3 +1,5 @@
+import time
+
 import cv2
 
 
@@ -27,3 +29,14 @@ def put_String(frame, text, pt, value, color =(120, 200, 90)):
     cv2.putText(frame, text, shade, font, 0.7, (0, 0, 0), 2)
     cv2.putText(frame, text, pt, font, 0.7, color, 2)
 
+
+def time_check(func, image, size, title):
+    start_time = time.perf_counter()
+    ret_img = func(image, size)
+    elapsed = (time.perf_counter() - start_time) * 1000
+    print(title, "수행시간 = %0.2f ms" % elapsed)
+    return ret_img
+
+
+def contain(p, shape):
+    return 0 <= p[0] < shape[0] and 0 <= p[1] < shape[1]
